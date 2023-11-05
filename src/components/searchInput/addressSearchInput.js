@@ -39,7 +39,7 @@ function AddressSearchInput ({setCurrentSearch}) {
                 ref={inputRef}
                 className='search-input'
             />
-            <Button variant="text" onClick={() => dispatch(addressGetAll(address))}>Fetch Search History</Button>
+            <Button variant="text" className='cardtitle' onClick={() => dispatch(addressGetAll(address))}>Fetch Search History</Button>
         </div>
     )
 }

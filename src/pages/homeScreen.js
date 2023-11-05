@@ -14,15 +14,16 @@ function HomeScreen () {
             <h4 className='text-left'>Current Select Address</h4>
             <div className="addressWrapper" >
                 { 
-                    currentSearch.length > 0 && 
-                    <CardBox address={currentSearch} width={"minWidth"} /> 
+                    currentSearch.length > 0 ? 
+                    <CardBox address={currentSearch} width={"minWidth"} /> :  <span className='alert'>Not Found Selected Address</span>
                 }
             </div>
             <h4 className='text-left'>Search History</h4>
             <div className="addressWrapper" >
                 { 
-                    addressList.length > 0 && 
-                    addressList.map((address, index) => <CardBox address={address.name} width={'maxWidth'}  key={index}/>) 
+                    addressList.length > 0 ? 
+                    addressList.map((address, index) => <CardBox address={address.name} width={'maxWidth'}  key={index}/>) :
+                    <span className='alert'>Please Fetch Search History</span>
                 }
             </div>
         </div>

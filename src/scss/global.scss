@@ -10,6 +10,7 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #DDF2FD;
 }
 
 code {
@@ -36,6 +37,7 @@ code {
 }
 
 .title {
+    color: #164863;
     text-align: center;
 }
 
@@ -58,9 +60,24 @@ code {
 }
 
 .text-left {
-    border-bottom: 1px solid #E9E9E9;
+    border-bottom: 1px solid #9BBEC8;
+    color: #164863;
     text-align: left;
     max-width: 650px;
     padding: 10px 0;
     width: 100%;
+}
+
+.alert {
+    color: #9BBEC8;
+    text-align: center;
+    width: 100%;
+}
+
+.cardtitle {
+    color: #164863;
+}
+
+.cardbody {
+    color: #427D9D;
 }
