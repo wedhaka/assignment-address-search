@@ -1,9 +1,9 @@
+import HomeScreen from "./pages/homeScreen";
+
 function App() {
-  return (
-    <div className="App">
-      test
-    </div>
-  );
+    return (
+        <HomeScreen></HomeScreen>
+    );
 }
 
 export default App;
