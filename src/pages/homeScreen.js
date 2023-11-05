@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import AddressSearchInput from './../components/searchInput/addressSearchInput';
 import { useState } from 'react';
 import CardBox from '../components/card/cardBox';
+import mainHOC from '../hoc/mainHOC';
 
 function HomeScreen () {
 
@@ -30,4 +31,4 @@ function HomeScreen () {
     );
 }
 
-export default HomeScreen;
+export default mainHOC(HomeScreen);

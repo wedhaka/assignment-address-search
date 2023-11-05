@@ -5,7 +5,10 @@
 function mainHOC (OriginalComponent) {
     return function NewComponent () {
         return (
-            <div></div>
+            <div>
+                <h2 >Assignment</h2>
+                <OriginalComponent />
+            </div>
         )
     }
 }
