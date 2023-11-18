@@ -1,0 +1,89 @@
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #DDF2FD;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h2 {
+    color: #427D9D;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.App {
+    align-items: center;
+    background-color: "#F9F9F9";
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 3px;
+    max-width: 650px;
+    width: 100%;
+}
+
+.title {
+    color: #164863;
+    text-align: center;
+}
+
+.addressWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    max-width: 650px;
+    width: 100%;
+}
+
+.search-input {
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.1);
+    height: 40px;
+    max-width: 650px;
+    padding: 5px 15px;
+}
+
+.text-left {
+    border-bottom: 1px solid #9BBEC8;
+    color: #164863;
+    text-align: left;
+    max-width: 650px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.alert {
+    color: #9BBEC8;
+    text-align: center;
+    width: 100%;
+}
+
+.cardtitle {
+    color: #164863;
+}
+
+.cardbody {
+    color: #427D9D;
+}
