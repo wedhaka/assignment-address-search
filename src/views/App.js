@@ -1,9 +1,13 @@
+import { createContext } from "react";
 import HomeScreen from "./pages/homeScreen";
 
+const ThemeContext = createContext({theme: ''});
+
 function App() {
-    console.log('app');
     return (
-        <HomeScreen></HomeScreen>
+        <ThemeContext.Provider value={'light'}>
+            <HomeScreen></HomeScreen>
+        </ThemeContext.Provider>
     );
 }
 

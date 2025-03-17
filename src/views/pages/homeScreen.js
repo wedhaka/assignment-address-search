@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import AddressSearchInput from './../components/searchInput/addressSearchInput';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import CardBox from '../components/card/cardBox';
 import mainHOC from '../hoc/mainHOC';
 
@@ -9,7 +9,9 @@ function HomeScreen () {
     const [ currentSearch, setCurrentSearch ] = useState('');
     const addressList = useSelector((state) => state.addressSearch);
 
-    console.log('home');
+    const theme = useContext(ThemeContext);
+
+    console.log('home', theme);
 
     return (
         <div className="App">
